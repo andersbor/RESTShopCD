@@ -10,7 +10,8 @@ namespace RESTShop.Managers
         private static readonly List<SalesItem> Data = new List<SalesItem>
         {
             new SalesItem {Id=_nextId++, Name = "Pencil", Price = 8.5, Quantity = 14},
-            new SalesItem {Id=_nextId++, Name = "Cup", Price = 34.7, Quantity = 4}
+            new SalesItem {Id=_nextId++, Name = "Cup", Price = 34.7, Quantity = 4},
+            new SalesItem { Id=_nextId++, Name="Glasses", Price=1234, Quantity = 1}
         };
 
         public List<SalesItem> GetAll()
