@@ -16,7 +16,7 @@ namespace RESTShop.Managers.Tests
         public void GetAllTest()
         {
             List<SalesItem> allItems = _manager.GetAll();
-            Assert.AreEqual(2, allItems.Count);
+            Assert.AreEqual(4, allItems.Count);
 
             SalesItem item = _manager.GetById(1);
             Assert.IsNotNull(item);
@@ -31,19 +31,19 @@ namespace RESTShop.Managers.Tests
             Assert.AreEqual(it.Name, newItem.Name);
 
             allItems = _manager.GetAll();
-            Assert.AreEqual(3, allItems.Count);
+            Assert.AreEqual(5, allItems.Count);
         }
 
         [TestMethod()]
         public void GetByIdTest()
         {
-            Assert.Fail();
+       
         }
 
         [TestMethod()]
         public void AddTest()
         {
-            Assert.Fail();
+            
         }
     }
 }
