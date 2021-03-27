@@ -11,7 +11,8 @@ namespace RESTShop.Managers
         {
             new SalesItem {Id=_nextId++, Name = "Pencil", Price = 8.5, Quantity = 14},
             new SalesItem {Id=_nextId++, Name = "Cup", Price = 34.7, Quantity = 4},
-            new SalesItem { Id=_nextId++, Name="Glasses", Price=1234, Quantity = 1}
+            new SalesItem { Id=_nextId++, Name="Glasses", Price=1234, Quantity = 1},
+            new SalesItem {Id=_nextId++, Name ="Ink", Price=499, Quantity = 2}
         };
 
         public List<SalesItem> GetAll()
